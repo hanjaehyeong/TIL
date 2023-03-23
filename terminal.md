@@ -74,10 +74,3 @@
 <strong>Is -al | grep .파일명</strong> : 특정 파일 찾기
 (Is -al | grep .TIL  ->"TIL"파일 찾기)
 </pre>
-
-git 용어
-
-- 스테이징
-- 커밋
-- 푸쉬
--
