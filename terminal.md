@@ -43,7 +43,7 @@
 </pre>
 
 <pre>
-<strong>cls</strong> : 현재 명령 프롬프트 창 초기화
+<strong>Clear</strong> : 현재 명령 프롬프트 창 초기화
 (이전 명령어 결과 삭제)
 </pre>
 
