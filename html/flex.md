@@ -68,5 +68,4 @@ display 속성만 지정하여 flex container를 생성하면 다른 flex 관련
 container의 크기보다 더 많은 flex item(항목)이 있을 경우 행을 바꾸지 않고 주축 방향으로 흘러 넘치게 된다.<br> 
 어떤 항목이 다른 flex item(항목)보다 높이 값이 크다면 나머지 모든 flex item(항목)들은 그에 맞게 교차축을 따라 늘어나게 된다.
 
-flexbox를 사용하고 싶으면
-[flexboxfoggy](https://flexboxfroggy.com/#ko)를 통해 연습할 수 있다.
+[flexboxfoggy](https://flexboxfroggy.com/#ko)를 통해 flexbox 꼭 연습
