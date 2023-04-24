@@ -1,0 +1,64 @@
+## **모드 변환 명령어**<br>
+운영자 > 사용자 "disable"<br>
+사용자 > 운영자 "enable"<br>
+
+기본 프롬프트 : 라우터 "Router>", 스위치 "Switch>"<br>
+사용자 모드 : ">" Router> Switch><br>
+운영자 모드 : "#" Router# Switch#<br>
+
+사용자 모드에서 enable을 입력<br>
+사전에 비밀번호가 설정된 경우 패스워드를 물어봄<br>
+그렇지 않을 경우 바로 운영자 모드로 전환<br>
+
+운영자 모드에서 disable을 입력<br>
+바로 사용자 모드로 전환<br>
+
+## **config terminal, end, exit**
+전역 설정 모드로 들어가는 명령어<br>
+운영자 모드에서<br>
+`config termianl`을 입력하면 전역 설정 모드<br>
+`end`를 입력하면 전역 설정 모드에서 빠져나옴<br>
+`exit`를 입력하면 바로 전 단계로 이동<br>
+
+## **hostname**
+이름을 바꿔주는 명령어<br>
+전역 설정 모드에서<br>
+`hostname (바꿀 이름)`을 입력하면<br>
+장비(Router나 Switch)의 이름이 바뀜<br>
+
+## **interface**
+LAN, WAN 인터페이스에 변화를 주는 명령어<br>
+전역 설정 모드에서<br>
+`interface (인터페이스)_(이름)_(번호)`을 입력하면<br>
+Router의 인터페이스 : LAN, WAN<br>
+Switch의 인터페이스 : LAN<br>
+현재 위치가 (config-if)로 바뀜
+```
+Router(config)# interface fa0/0
+Router(config-if)#
+```
+fast internet 0/0 포트를 설정(Switch도 동일)
+
+## **line**
+Router나 Switch의 콘솔 인터페이스 또는 가상터미널을 설정하는 명령어<br>
+전역 설정 모드에서<br>
+`line {console 0 | vty 가상터미널번호_범위}`를 입력하면<br>
+현재 위치가 (config-line)으로 바뀜<br>
+line 모드에서 `password`명령어로 비밀번호 설정<br>
+`login`명령어로 콘솔, 가상 터미널 접속 시 지정한 password를 검사하도록 함<br>
+```
+Router(config)# line vty 0 4
+Router(config-line)# password telent
+Router(config-line)# login
+Router(config-line)# exit
+Router(config)#
+```
+vty 0~4까지 설정(Switch도 동일)<br>
+비밀번호 : telent<br>
+exit 명령어로 line 명령어 전 단계로 이동<br>
+
+## **enable secret**
+사용자 모드에서 운영자 모드로 전환할 때 사용할 password 지정
+전역 설정 모드에서
+enable secret (비밀번호)를 입력하면
+
