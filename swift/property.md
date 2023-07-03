@@ -67,3 +67,93 @@ profile.isAdult //false
 profile.isAdult = true //read only라서 오류 발생
 
 ```
+----
+# property observer & wrapper
+### obswever
+```swift
+//property에 값을 새로 설정(set)할 때 감지해서 알려주는 기능
+
+class StepCounter{
+	var steps = 0	{
+		willset { //값을 새로 설정하기 전
+			print("현재값", self.steps)
+			print("설정하려는 값", newValue)
+		}
+		didset { //값을 새로 설정한 후
+			print("이전 값", oldValue)
+			print("현재값", self.steps)
+		}
+	}
+}
+
+let stepcounter = StepCounter()
+stepcounter.steps = 10
+
+//현재값 0 (willset)
+//설정하려는 값 10
+//이전 값 0 (didset)
+//현재값 10
+
+//값을 세팅 할 때 마다 항상 알려줌
+//willset didset 둘 중 하나만 써도 됨
+
+
+class ClassA {
+	var a = 0
+}
+
+class ClassB{
+	var b = ClassA(){
+		willset{
+			print(newValue)
+		}
+		didset{
+			print(oldValue)
+		}
+	}
+}
+
+ClassA가 class일 때
+let classB = ClassB()
+classB.b.a = 100 //willset과 didset이 동작하지 않음
+
+ClassA가 struct일 때
+let classB = ClassB()
+classB.b.a = 100 //willset과 didset이 동작 함
+
+//struct는 Value타입이기 때문이다.
+```
+### wrapper
+```swift
+//property에 기능을 넣는다(커스터마이징)
+//여러곳에 쓸 수 있음
+
+//글자 입력 제한
+@propertyWrapper
+struct CharacterLimit{
+	var temp = ""
+	var wrappedValue: String{ //이름은 무조건 wrappedValue
+
+		get{
+			return temp
+		}
+		set{
+			let mtText = newValue
+			while myText.count > 10{
+				myText.removeLast()
+			}
+
+			temp = myText
+		}
+	}
+
+	init(wrappedValue: String){
+		self.wrappedValue = wrappedValue
+	}
+}
+
+class Display{
+	@CharacterLimit var name: String = ""
+	var password: String = ""
+}
+```
