@@ -87,6 +87,20 @@ func isSameValues<T: Equatable>(_ a: T, _ b: T) -> Bool {
     return a == b               
 }
 //T: Equatable으로 제약을 줄 수 있음(같은 타입의 파라미터만 받겠다.)
+
+//Numeric으로 숫자와 관련된 타입으로만 제한을 둠
+func plus<T: Numeric>(a: T, b: T) -> T {
+	return a + b
+}
+
+//2개 이상 제약을 둘 경우 밖에 쓰기
+//Comparable로 a와 b가 비교가 가능하게
+func plus<T>(a: T, b: T) -> T where T: Numeric, T: Comparable{
+	if a > b{
+		print("a")
+	}
+	return a + b
+}
 ```
 
 2. 클래스 제약
