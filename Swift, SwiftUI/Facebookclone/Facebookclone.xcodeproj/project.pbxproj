@@ -14,6 +14,11 @@
 		4CC772642A5F7CBF0027C645 /* FacebookcloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC772632A5F7CBF0027C645 /* FacebookcloneUITests.swift */; };
 		4CC772662A5F7CBF0027C645 /* FacebookcloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC772652A5F7CBF0027C645 /* FacebookcloneUITestsLaunchTests.swift */; };
 		4CC772762A60E4140027C645 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC772752A60E4140027C645 /* ContentView.swift */; };
+		4CC772942A64C2140027C645 /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC772932A64C2140027C645 /* Friends.swift */; };
+		4CC772982A64C25A0027C645 /* profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC772972A64C25A0027C645 /* profile.swift */; };
+		4CC7729A2A64C2680027C645 /* alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC772992A64C2680027C645 /* alarm.swift */; };
+		4CC7729C2A64C2710027C645 /* menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC7729B2A64C2710027C645 /* menu.swift */; };
+		4CC7729E2A64DCF90027C645 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC7729D2A64DCF90027C645 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		4CC772632A5F7CBF0027C645 /* FacebookcloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookcloneUITests.swift; sourceTree = "<group>"; };
 		4CC772652A5F7CBF0027C645 /* FacebookcloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookcloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4CC772752A60E4140027C645 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4CC772932A64C2140027C645 /* Friends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
+		4CC772972A64C25A0027C645 /* profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profile.swift; sourceTree = "<group>"; };
+		4CC772992A64C2680027C645 /* alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alarm.swift; sourceTree = "<group>"; };
+		4CC7729B2A64C2710027C645 /* menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menu.swift; sourceTree = "<group>"; };
+		4CC7729D2A64DCF90027C645 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,7 @@
 		4CC772472A5F7CBE0027C645 /* Facebookclone */ = {
 			isa = PBXGroup;
 			children = (
+				4CC772852A64C18D0027C645 /* menu */,
 				4CC772752A60E4140027C645 /* ContentView.swift */,
 				4CC772482A5F7CBE0027C645 /* FacebookcloneApp.swift */,
 				4CC7724C2A5F7CBF0027C645 /* Assets.xcassets */,
@@ -125,6 +136,18 @@
 				4CC772652A5F7CBF0027C645 /* FacebookcloneUITestsLaunchTests.swift */,
 			);
 			path = FacebookcloneUITests;
+			sourceTree = "<group>";
+		};
+		4CC772852A64C18D0027C645 /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				4CC772932A64C2140027C645 /* Friends.swift */,
+				4CC772972A64C25A0027C645 /* profile.swift */,
+				4CC772992A64C2680027C645 /* alarm.swift */,
+				4CC7729B2A64C2710027C645 /* menu.swift */,
+				4CC7729D2A64DCF90027C645 /* Home.swift */,
+			);
+			path = menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +281,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CC772762A60E4140027C645 /* ContentView.swift in Sources */,
+				4CC772942A64C2140027C645 /* Friends.swift in Sources */,
 				4CC772492A5F7CBE0027C645 /* FacebookcloneApp.swift in Sources */,
+				4CC7729A2A64C2680027C645 /* alarm.swift in Sources */,
+				4CC772982A64C25A0027C645 /* profile.swift in Sources */,
+				4CC7729C2A64C2710027C645 /* menu.swift in Sources */,
+				4CC7729E2A64DCF90027C645 /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

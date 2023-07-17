@@ -1,21 +1,13 @@
 //
-//  ContentView.swift
+//  Home.swift
 //  Facebookclone
 //
-//  Created by 한재형 on 2023/07/13.
+//  Created by 한재형 on 2023/07/17.
 //
 
 import SwiftUI
-import Foundation
 
-struct ColorManager {
-    // create static variables for custom colors
-    static let TopGray = Color("TopGray")
-
-    //... add the rest of your colors here
-}
-
-struct ContentView: View {
+struct Home: View {
     var body: some View {
         VStack{
             ScrollView{
@@ -25,23 +17,23 @@ struct ContentView: View {
                         .frame(width: 140, height: 27)
                         .padding(15)
                     Spacer()
-                        Menu{
-                            Button(action: {}, label: {
-                                Text("게시")
-                            })
-                            Button(action: {}, label: {
-                                Text("스토리")
-                            })
-                            Button(action: {}, label: {
-                                Text("릴스")
-                            })
-                            Button(action: {}, label: {
-                                Text("라이브 방송")
-                            })
-                        }label: {
-                            Label(title: {}, icon: {Image(systemName: "plus.circle")})
-                                .foregroundColor(.black)
-                        }.frame(width: 27)
+                    Menu{
+                        Button(action: {}, label: {
+                            Text("게시")
+                        })
+                        Button(action: {}, label: {
+                            Text("스토리")
+                        })
+                        Button(action: {}, label: {
+                            Text("릴스")
+                        })
+                        Button(action: {}, label: {
+                            Text("라이브 방송")
+                        })
+                    }label: {
+                        Label(title: {}, icon: {Image(systemName: "plus.circle")})
+                            .foregroundColor(.black)
+                    }
                     Button{
                         //검색 버튼 눌렀을 때 실행
                     }label: {
@@ -119,7 +111,7 @@ struct ContentView: View {
                                     .frame(width: 24, height: 24)
                                     .foregroundColor(.blue)
                                     .position(CGPoint(x: 50, y: 100))
-                                    
+                                
                             }.cornerRadius(17)
                         }
                         
@@ -135,7 +127,7 @@ struct ContentView: View {
                                         VStack{
                                             Circle()
                                                 .stroke(Color.gray,lineWidth: 4)
-                                                .background(Circle().foregroundColor(Color.gray))
+                                                .background(Circle().foregroundColor(Color(.systemGray4)))
                                                 .frame(width: 23, height: 23)
                                             Spacer()
                                         }
@@ -144,15 +136,15 @@ struct ContentView: View {
                                 }
                             }.cornerRadius(17)
                             
-                            }
+                        }
                     }
                     .padding(.leading, 15)
                     .padding(.bottom, 10)
                     .padding(.top, 3)
-                    }
+                }
                 
                 HStack{
-                    Color.gray
+                    Color(.systemGray4)
                 }
                 .padding(.top, -8)
                 .frame(height: 1)
@@ -195,14 +187,16 @@ struct ContentView: View {
                                         Button{
                                             //친구축가 눌렀을 때 실행
                                         }label: {
-                                            HStack{
-                                                Image(systemName:"person.fill.checkmark")
-                                                Text("친구 추가")
-                                            }
-                                            .foregroundColor(.blue)
-                                            .background(Color(.blue))
-                                            .cornerRadius(5)
-                                            .padding(5)
+                                            RoundedRectangle(cornerRadius: 5)
+                                                .foregroundColor(.blue)
+                                                .frame(width: 120, height: 30)
+                                                .overlay(
+                                                    HStack{
+                                                        Image(systemName:"person.fill.checkmark")
+                                                        Text("친구 추가")
+                                                        
+                                                    }.foregroundColor(.black)
+                                                )
                                         }
                                     }
                                     .padding()
@@ -221,7 +215,7 @@ struct ContentView: View {
                 }
                 
                 HStack{
-                    Color.gray
+                    Color(.systemGray4)
                 }
                 .padding(.top, -8)
                 .frame(height: 1)
@@ -285,7 +279,7 @@ struct ContentView: View {
                         }.padding(.trailing, 15)
                     }.padding(.bottom, 8)
                     
-
+                    
                     Divider()
                         .padding(.leading, 30)
                         .padding(.trailing, 30)
@@ -317,100 +311,16 @@ struct ContentView: View {
                 }
                 
                 RoundedRectangle(cornerRadius: 0)
-                    .foregroundColor(.gray)
+                    .foregroundColor(Color(.systemGray4))
                     .padding(.top, -8)
             }
             
-            
-            Spacer()
-            ZStack{
-                RoundedRectangle(cornerRadius: 0)
-                    .frame(height: 10)
-                    .foregroundColor(.white)
-                    .ignoresSafeArea()
-                HStack{
-                    Button{
-                        //홈 눌렀을 때 실행
-                    }label: {
-                        VStack{
-                            Image(systemName: "house")
-                                .resizable()
-                                .frame(width: 22, height: 22)
-                            Text("홈")
-                                .font(.system(size: 11))
-                        }
-                    }.foregroundColor(.black)
-                        .padding()
-                    Button{
-                        //친구 눌렀을 때 실행
-                    }label: {
-                        VStack{
-                            Image(systemName: "person.2")
-                                .resizable()
-                                .frame(width: 22, height: 22)
-                            Text("친구")
-                                .font(.system(size: 11))
-                        }
-                    }.foregroundColor(.black)
-                        .padding()
-                    Button{
-                        //동영상 눌렀을 때 실행
-                    }label: {
-                        VStack{
-                            Image(systemName: "play.square")
-                                .resizable()
-                                .frame(width: 22, height: 22)
-                            Text("동영상")
-                                .font(.system(size: 11))
-                        }
-                    }.foregroundColor(.black)
-                        .padding()
-                    Button{
-                        //프로필 눌렀을 때 실행
-                    }label: {
-                        VStack{
-                            Image(systemName: "person.circle")
-                                .resizable()
-                                .frame(width: 22, height: 22)
-                            Text("프로필")
-                                .font(.system(size: 11))
-                        }
-                    }.foregroundColor(.black)
-                        .padding()
-                    Button{
-                        //알림 눌렀을 때 실행
-                    }label: {
-                        VStack{
-                            Image(systemName: "bell")
-                                .resizable()
-                                .frame(width: 22, height: 22)
-                            Text("알림")
-                                .font(.system(size: 11))
-                        }
-                    }.foregroundColor(.black)
-                        .padding()
-                    Button{
-                        //메뉴 눌렀을 때 실행
-                    }label: {
-                        VStack{
-                            Image(systemName: "square.grid.2x2")
-                                .resizable()
-                                .frame(width: 22, height: 22)
-                            Text("메뉴")
-                                .font(.system(size: 11))
-                        }
-                    }.foregroundColor(.black)
-                        .padding()
-                }
-            }
-        }.frame(maxWidth: .infinity)
-        
+        }
     }
 }
 
-
-struct ContentView_Previews: PreviewProvider {
+struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Home()
     }
 }
