@@ -16,6 +16,7 @@
 		4CC772C92A67CBC40027C645 /* HelloGSMCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC772C82A67CBC40027C645 /* HelloGSMCloneUITestsLaunchTests.swift */; };
 		4CC772D82A67D0B70027C645 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC772D72A67D0B70027C645 /* MainView.swift */; };
 		4CC772DA2A67FFAC0027C645 /* LoginWayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC772D92A67FFAC0027C645 /* LoginWayView.swift */; };
+		4CC772DC2A700DD20027C645 /* GradeCalCulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC772DB2A700DD20027C645 /* GradeCalCulator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		4CC772C82A67CBC40027C645 /* HelloGSMCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloGSMCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4CC772D72A67D0B70027C645 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		4CC772D92A67FFAC0027C645 /* LoginWayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWayView.swift; sourceTree = "<group>"; };
+		4CC772DB2A700DD20027C645 /* GradeCalCulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeCalCulator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			children = (
 				4CC772D72A67D0B70027C645 /* MainView.swift */,
 				4CC772D92A67FFAC0027C645 /* LoginWayView.swift */,
+				4CC772DB2A700DD20027C645 /* GradeCalCulator.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CC772AE2A67CBC20027C645 /* ContentView.swift in Sources */,
+				4CC772DC2A700DD20027C645 /* GradeCalCulator.swift in Sources */,
 				4CC772D82A67D0B70027C645 /* MainView.swift in Sources */,
 				4CC772DA2A67FFAC0027C645 /* LoginWayView.swift in Sources */,
 				4CC772AC2A67CBC20027C645 /* HelloGSMCloneApp.swift in Sources */,

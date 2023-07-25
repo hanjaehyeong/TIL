@@ -69,6 +69,7 @@ struct MainView: View {
                                     RoundedRectangle(cornerRadius: 10)
                                         .frame(width:250, height: 40)
                                         .foregroundColor(Color(.systemGray))
+                                        .shadow(color: .white, radius: 6, y: 3)
                                         .overlay(Text("접수 기간이 아닙니다.")
                                             .foregroundColor(.black)
                                             .fontWeight(.heavy))
@@ -92,14 +93,13 @@ struct MainView: View {
                                             .overlay(Text("여러 계정으로 로그인 하는 법").fontWeight(.heavy).foregroundColor(.black))
                                             
                                     }
-                                    Button{
-                                        
-                                    }label: {
+                                    NavigationLink{
+                                        GradeCalCulator()
+                                    }label:{
                                         RoundedRectangle(cornerRadius: 10)
                                             .foregroundColor(.white)
                                             .frame(width: 200, height: 45)
                                             .overlay(Text("모의 성적 계산 해보기").fontWeight(.heavy).foregroundColor(.black))
-                                            
                                     }
                                 }
                             }
