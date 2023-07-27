@@ -43,12 +43,10 @@ struct MainView: View {
                                     Text("광주소프트웨어")
                                         .foregroundColor(.white)
                                         .font(.system(size: 45))
-                                        .font(.largeTitle)
                                         .fontWeight(.black)
                                     Text("마이스터고등학교")
                                         .foregroundColor(.white)
                                         .font(.system(size: 45))
-                                        .font(.largeTitle)
                                         .fontWeight(.black)
                                 }
                                 VStack(spacing: 3){

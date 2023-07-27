@@ -70,14 +70,22 @@ struct GradeCalCulator: View {
                                     .overlay(Text("검정고시").foregroundColor(license ? .white : Color(.systemGray6)))
                             }
                         }
-                        Button{
-                            
-                        }label: {
+                        NavigationLink{
+                            if(graduate){
+                                Graduate()
+                            }else if(student){
+                                Student()
+                            }else if(license){
+                                License()
+                            }
+                        }label:{
                             RoundedRectangle(cornerRadius: 8)
                                 .frame(width: 170, height: 50)
                                 .foregroundColor(.white)
                                 .overlay(Text("다음").foregroundColor(.black))
+                                
                         }.padding(.top, 120)
+
                     }
                     Spacer()
                 }

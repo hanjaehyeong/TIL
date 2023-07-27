@@ -20,6 +20,8 @@
 		4CC772DE2A710A530027C645 /* Graduate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC772DD2A710A530027C645 /* Graduate.swift */; };
 		4CC772E02A710A620027C645 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC772DF2A710A620027C645 /* Student.swift */; };
 		4CC772E42A710A8B0027C645 /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC772E32A710A8B0027C645 /* License.swift */; };
+		4CC772E72A720EAC0027C645 /* SchoolIntroduce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC772E62A720EAB0027C645 /* SchoolIntroduce.swift */; };
+		4CC772EA2A7210050027C645 /* YouTubePlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4CC772E92A7210050027C645 /* YouTubePlayerKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,7 @@
 		4CC772DD2A710A530027C645 /* Graduate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graduate.swift; sourceTree = "<group>"; };
 		4CC772DF2A710A620027C645 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		4CC772E32A710A8B0027C645 /* License.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
+		4CC772E62A720EAB0027C645 /* SchoolIntroduce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolIntroduce.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CC772EA2A7210050027C645 /* YouTubePlayerKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +150,7 @@
 				4CC772E52A710A970027C645 /* Calculate */,
 				4CC772D72A67D0B70027C645 /* MainView.swift */,
 				4CC772D92A67FFAC0027C645 /* LoginWayView.swift */,
-				4CC772DB2A700DD20027C645 /* GradeCalCulator.swift */,
+				4CC772E62A720EAB0027C645 /* SchoolIntroduce.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -154,6 +158,7 @@
 		4CC772E52A710A970027C645 /* Calculate */ = {
 			isa = PBXGroup;
 			children = (
+				4CC772DB2A700DD20027C645 /* GradeCalCulator.swift */,
 				4CC772DD2A710A530027C645 /* Graduate.swift */,
 				4CC772E32A710A8B0027C645 /* License.swift */,
 				4CC772DF2A710A620027C645 /* Student.swift */,
@@ -177,6 +182,9 @@
 			dependencies = (
 			);
 			name = HelloGSMClone;
+			packageProductDependencies = (
+				4CC772E92A7210050027C645 /* YouTubePlayerKit */,
+			);
 			productName = HelloGSMClone;
 			productReference = 4CC772A82A67CBC20027C645 /* HelloGSMClone.app */;
 			productType = "com.apple.product-type.application";
@@ -249,6 +257,9 @@
 				Base,
 			);
 			mainGroup = 4CC7729F2A67CBC20027C645;
+			packageReferences = (
+				4CC772E82A7210050027C645 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */,
+			);
 			productRefGroup = 4CC772A92A67CBC20027C645 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -296,6 +307,7 @@
 				4CC772DE2A710A530027C645 /* Graduate.swift in Sources */,
 				4CC772E42A710A8B0027C645 /* License.swift in Sources */,
 				4CC772D82A67D0B70027C645 /* MainView.swift in Sources */,
+				4CC772E72A720EAC0027C645 /* SchoolIntroduce.swift in Sources */,
 				4CC772DA2A67FFAC0027C645 /* LoginWayView.swift in Sources */,
 				4CC772E02A710A620027C645 /* Student.swift in Sources */,
 				4CC772AC2A67CBC20027C645 /* HelloGSMCloneApp.swift in Sources */,
@@ -617,6 +629,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4CC772E82A7210050027C645 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SvenTiigi/YouTubePlayerKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4CC772E92A7210050027C645 /* YouTubePlayerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4CC772E82A7210050027C645 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */;
+			productName = YouTubePlayerKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4CC772A02A67CBC20027C645 /* Project object */;
 }
