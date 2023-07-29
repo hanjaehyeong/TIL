@@ -54,6 +54,16 @@ struct SchoolIntroduce: View {
                                 .foregroundColor(.white)
                                 .font(.system(size: 18))
                                 .fontWeight(.bold)
+                            Image("MOU")
+                                .resizable()
+                                .frame(width: 370, height: 100)
+                        }.padding(.bottom, 65)
+                        VStack{
+                            Text("취업률")
+                                .foregroundColor(.white)
+                                .font(.system(size: 18))
+                                .fontWeight(.bold)
+                            
                         }
                     }
                 }

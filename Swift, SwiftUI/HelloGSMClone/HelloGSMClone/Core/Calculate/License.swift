@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct License: View {
-    @State var total = ""
+    @State var total1 = ""
+    @State var total2 = ""
     var body: some View {
         ZStack{
             Color(red: 16/255, green: 1/255, blue: 48/255).ignoresSafeArea()
@@ -44,7 +45,7 @@ struct License: View {
                                 .font(.system(size: 14))
                                 .fontWeight(.semibold)
                             )
-                        TextField("", text: $total)
+                        TextField("", text: $total1)
                             .frame(width: 140, height: 30)
                             .background(.gray)
                             .cornerRadius(8)
@@ -58,7 +59,7 @@ struct License: View {
                                 .font(.system(size: 14))
                                 .fontWeight(.semibold)
                             )
-                        TextField("", text: $total)
+                        TextField("", text: $total2)
                             .frame(width: 140, height: 30)
                             .background(.gray)
                             .cornerRadius(8)
