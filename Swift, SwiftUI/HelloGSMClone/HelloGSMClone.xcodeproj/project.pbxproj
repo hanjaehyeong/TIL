@@ -22,6 +22,7 @@
 		4CC772E42A710A8B0027C645 /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC772E32A710A8B0027C645 /* License.swift */; };
 		4CC772E72A720EAC0027C645 /* SchoolIntroduce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC772E62A720EAB0027C645 /* SchoolIntroduce.swift */; };
 		4CC772EA2A7210050027C645 /* YouTubePlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4CC772E92A7210050027C645 /* YouTubePlayerKit */; };
+		4CC773582A7A678F0027C645 /* TeamIntroduce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC773572A7A678F0027C645 /* TeamIntroduce.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		4CC772DF2A710A620027C645 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		4CC772E32A710A8B0027C645 /* License.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
 		4CC772E62A720EAB0027C645 /* SchoolIntroduce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolIntroduce.swift; sourceTree = "<group>"; };
+		4CC773572A7A678F0027C645 /* TeamIntroduce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TeamIntroduce.swift; path = HelloGSMClone/Core/TeamIntroduce.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				4CC772D72A67D0B70027C645 /* MainView.swift */,
 				4CC772D92A67FFAC0027C645 /* LoginWayView.swift */,
 				4CC772E62A720EAB0027C645 /* SchoolIntroduce.swift */,
+				4CC773572A7A678F0027C645 /* TeamIntroduce.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CC773582A7A678F0027C645 /* TeamIntroduce.swift in Sources */,
 				4CC772AE2A67CBC20027C645 /* ContentView.swift in Sources */,
 				4CC772DC2A700DD20027C645 /* GradeCalCulator.swift in Sources */,
 				4CC772DE2A710A530027C645 /* Graduate.swift in Sources */,
