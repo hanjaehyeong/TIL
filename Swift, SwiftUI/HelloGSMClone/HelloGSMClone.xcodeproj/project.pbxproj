@@ -61,7 +61,7 @@
 		4CC772DF2A710A620027C645 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		4CC772E32A710A8B0027C645 /* License.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
 		4CC772E62A720EAB0027C645 /* SchoolIntroduce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolIntroduce.swift; sourceTree = "<group>"; };
-		4CC773572A7A678F0027C645 /* TeamIntroduce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TeamIntroduce.swift; path = HelloGSMClone/Core/TeamIntroduce.swift; sourceTree = SOURCE_ROOT; };
+		4CC773572A7A678F0027C645 /* TeamIntroduce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TeamIntroduce.swift; path = HelloGSMClone/Core/Team/TeamIntroduce.swift; sourceTree = SOURCE_ROOT; };
 		4CC773592A7E90240027C645 /* TeamFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamFunc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,8 +155,7 @@
 				4CC772D72A67D0B70027C645 /* MainView.swift */,
 				4CC772D92A67FFAC0027C645 /* LoginWayView.swift */,
 				4CC772E62A720EAB0027C645 /* SchoolIntroduce.swift */,
-				4CC773572A7A678F0027C645 /* TeamIntroduce.swift */,
-				4CC773592A7E90240027C645 /* TeamFunc.swift */,
+				4CC7735B2A7E96D90027C645 /* Team */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -170,6 +169,15 @@
 				4CC772DF2A710A620027C645 /* Student.swift */,
 			);
 			path = Calculate;
+			sourceTree = "<group>";
+		};
+		4CC7735B2A7E96D90027C645 /* Team */ = {
+			isa = PBXGroup;
+			children = (
+				4CC773572A7A678F0027C645 /* TeamIntroduce.swift */,
+				4CC773592A7E90240027C645 /* TeamFunc.swift */,
+			);
+			path = Team;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

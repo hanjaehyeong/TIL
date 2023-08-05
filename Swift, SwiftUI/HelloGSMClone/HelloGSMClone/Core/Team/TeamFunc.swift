@@ -9,25 +9,25 @@ import Foundation
 import SwiftUI
 
 
-func team(title: String, color: Color, subtitle: String, imgname: String) -> (){
-//    var title = title
-//    var subtitle = subtitle
-//    var imaname = imgname
-//    var color: Color = color
-
-    Text(title.description)
+@ViewBuilder func team(title: String, color: Color, subtitle: String, imgname: String) -> some View{
+    Text("\(title)")
         .foregroundColor(color)
         .font(.system(size: 22))
         .fontWeight(.semibold) +
     Text("Chapter")
+        .foregroundColor(.white)
+        .font(.system(size: 22))
+        .fontWeight(.semibold)
     Divider()
         .background(.white)
         .frame(width: 180)
-    Text(subtitle.description)
+    Text("\(subtitle)")
         .multilineTextAlignment(.center)
         .foregroundColor(.white)
     Divider()
         .background(.white)
         .frame(width: 100)
-    Image(imgname.description)
+    Image("\(imgname)")
+        .resizable()
+        .frame(width: 180, height: 120)
 }
