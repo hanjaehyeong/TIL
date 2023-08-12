@@ -2,7 +2,7 @@
 //  TeamIntroduce.swift
 //  HelloGSMClone
 //
-//  Created by 한재형 on 2023/08/02.
+//  Created by 한재형 on 2023/08/12.
 //
 
 import SwiftUI
