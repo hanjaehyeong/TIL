@@ -26,6 +26,7 @@
 		4CC7735E2A87B8FD0027C645 /* TeamIntroduce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC7735D2A87B8FD0027C645 /* TeamIntroduce.swift */; };
 		4CC773602A87B9650027C645 /* QNA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC7735F2A87B9650027C645 /* QNA.swift */; };
 		4CC773622A87C4560027C645 /* QNARound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC773612A87C4560027C645 /* QNARound.swift */; };
+		4CC773692A8DF48E0027C645 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC773682A8DF48E0027C645 /* MenuBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		4CC7735D2A87B8FD0027C645 /* TeamIntroduce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamIntroduce.swift; sourceTree = "<group>"; };
 		4CC7735F2A87B9650027C645 /* QNA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QNA.swift; sourceTree = "<group>"; };
 		4CC773612A87C4560027C645 /* QNARound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QNARound.swift; sourceTree = "<group>"; };
+		4CC773682A8DF48E0027C645 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				4CC772E52A710A970027C645 /* Calculate */,
 				4CC7735C2A87B8190027C645 /* Introduce */,
 				4CC772D72A67D0B70027C645 /* MainView.swift */,
+				4CC773682A8DF48E0027C645 /* MenuBar.swift */,
 				4CC772D92A67FFAC0027C645 /* LoginWayView.swift */,
 				4CC7735F2A87B9650027C645 /* QNA.swift */,
 				4CC773612A87C4560027C645 /* QNARound.swift */,
@@ -342,6 +345,7 @@
 				4CC773602A87B9650027C645 /* QNA.swift in Sources */,
 				4CC772E02A710A620027C645 /* Student.swift in Sources */,
 				4CC7735A2A7E90240027C645 /* TeamFunc.swift in Sources */,
+				4CC773692A8DF48E0027C645 /* MenuBar.swift in Sources */,
 				4CC772AC2A67CBC20027C645 /* HelloGSMCloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

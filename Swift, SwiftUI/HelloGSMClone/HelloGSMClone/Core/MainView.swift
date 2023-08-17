@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
-    
     @State var menubaropend = false
-    
     var body: some View {
         NavigationView{
             ZStack{
@@ -29,7 +27,10 @@ struct MainView: View {
                                     .fontWeight(.heavy)
                                 Spacer()
                                 Button{
-                                    self.menubaropend.toggle()
+                                    withAnimation(.default){
+                                        menubaropend.toggle()
+                                    }
+                                    
                                 }label: {
                                     Image(systemName: "line.3.horizontal")
                                         .frame(width: 25, height: 25)
@@ -110,12 +111,26 @@ struct MainView: View {
                                     .cornerRadius(15)
                             }
                         }
+                            
                     }
+                }
+                if menubaropend{
+                    MenuBar()
+                    Button{
+                        withAnimation(.default){
+                            menubaropend.toggle()
+                        }
+                    }label: {
+                        Image(systemName: "arrow.left")
+                            .foregroundColor(.white)
+                    }
+                    .offset(x: 30, y: -360)
                 }
             }
         }.navigationBarBackButtonHidden(true)
     }
 }
+
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
