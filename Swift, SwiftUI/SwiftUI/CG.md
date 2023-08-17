@@ -41,3 +41,9 @@ public struct CGRect{
 let rect: CGRect = .init(x:100, y: 200, width: 150, height: 200)
 ```
 **CGRect** x, y, width, height를 한번에 정의
+## CPU에 따라 Float, Double을 자동으로 선택하는 CGFloat
+32비트 CPU로 빌드하는 되면 Float 타입으로 결정<br>
+64비트 CPU로 빌드하게 되면 Double 타입으로 결정
+
+코어 그래픽스 관련하여 뷰에 실수의 값이 필요할때 자주 사용한다<br>
+SwiftUI에서 제공하는 shadow 기능도 x, y 값을 CGFloat로 활용
