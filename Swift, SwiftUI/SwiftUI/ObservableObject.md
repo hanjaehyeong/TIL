@@ -6,10 +6,12 @@
 
  View에서는 이런 ViewModel에 `@ObservedObject` 를 붙여줌으로서 ViewModel의 변화를 관찰할 수 있고, 그 변화에 반응할 수 있다.
 
+---
 **ObservableObject**
 
 해당 프로토콜을 클래스에 채택하면 해당 클래스의 인스턴스를 관찰하고 있다가 값이 변경되면 뷰를 업데이트 한다.
 
+---
 **@Published**
 
 ObservableObject를 채택한 클래스 내에서 프로퍼티를 만들 때 사용하는 PropertyWrapper
@@ -18,6 +20,7 @@ ObservableObject를 채택한 클래스 내에서 프로퍼티를 만들 때 사
 
 반드시 Class에서 사용해야 한다.
 
+---
 **ObservableObject와 @Published의 관계**
 
 ObservableObject라는 가방에 귀중품을 넣어 뒀다.
@@ -26,12 +29,14 @@ ObservableObject라는 가방에 귀중품을 넣어 뒀다.
 
 이 때 @Published가 가방의 내용물에 변화가 생기면 알려주는 역할을 한다.
 
+---
 **@ObservedObject**
 
 ObservableObject 프로토콜을 따르는 클래스를 인스턴스화 할때는 붙여야 한다.
 
 값이 업데이트 될 때 마다 View를 갱신하는 PropertyWrapper
 
+---
 **@StateObject**
 
 ObservableObject 프로토콜을 따르는 클래스를 인스턴스화 할때는 붙여야 한다.
@@ -52,6 +57,7 @@ struct ContentView: View {
 }
 ```
 
+---
 **@ObservedObject Vs @StateObject**
 
 @StateObject를 사용한 View는 부모뷰 변경에도 변경이 없다
