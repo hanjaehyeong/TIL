@@ -69,7 +69,7 @@ profile.isAdult = true //read only라서 오류 발생
 ```
 ----
 # property observer & wrapper
-### obswever
+### observer
 ```swift
 //property에 값을 새로 설정(set)할 때 감지해서 알려주는 기능
 
@@ -128,32 +128,54 @@ classB.b.a = 100 //willset과 didset이 동작 함
 //property에 기능을 넣는다(커스터마이징)
 //여러곳에 쓸 수 있음
 
-//글자 입력 제한
-@propertyWrapper
-struct CharacterLimit{
-	var temp = ""
-	var wrappedValue: String{ //이름은 무조건 wrappedValue
-
-		get{
-			return temp
-		}
-		set{
-			let mtText = newValue
-			while myText.count > 10{
-				myText.removeLast()
-			}
-
-			temp = myText
-		}
-	}
-
-	init(wrappedValue: String){
-		self.wrappedValue = wrappedValue
-	}
+struct add  {
+    private var value = 0
+    var wrappedValue: Int {
+        get { self.value }
+        set { self.value = newValue + 3 }
+    }
 }
 
-class Display{
-	@CharacterLimit var name: String = ""
-	var password: String = ""
+struct Me {
+    @add var age: Int
 }
+
+struct You {
+    @add var age: Int
+}
+
+var me = Me()
+me.age = 10
+print(me.age) //13
+
+
+var you = You()
+you.age = 11
+print(you.age) //14
+
+// Property Wrapper가 없을 경우
+struct Me {
+    var num = 0
+    var age: Int {
+        get { self.num }
+        set { self.num = newValue + 3 }
+    }
+}
+
+struct You {
+    var num = 0
+    var age: Int {
+        get { self.num }
+        set { self.num = newValue + 3 }
+    }
+}
+
+var me = Me()
+me.age = 10
+print(me.age) //13
+
+var you = You()
+you.age = 11
+print(you.age) //14
+
 ```
